@@ -1,0 +1,38 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+}
+.bigDiv {
+  width: 30rem;
+  height: 30rem;
+  position: relative;
+  overflow: hidden;
+}
+.bigDiv img {
+  width: 100%;
+  height: 100%;
+  transition:.6s;
+}
+.Hello {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  align-items: center;
+  transform: translateX(-100%);
+  background: rgb(167, 162, 162);
+  transition:.6s;
+}
+.bigDiv:hover img {
+  transform: translateX(100%);
+}
+.bigDiv:hover .Hello {
+  transform: translateX(0);
+}
